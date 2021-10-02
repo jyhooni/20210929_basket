@@ -360,3 +360,4 @@ Received Import Request.
 Start importing Assets/images/new hoop/new hoop1.png using Guid(3e1f571db09ce284eb4eab91b1114629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db7f7ee8a4c4e3120fede586480938f') in 0.048872 seconds 
   Import took 0.052521 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

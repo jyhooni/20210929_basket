@@ -19,6 +19,16 @@ public class GameManager : MonoBehaviour
 	public GameObject bg2;
 	public GameObject bg3;
 
+	
+
+	//1. 변수를 선언할 때 앞문자는 소문자로 하자.
+	//2.함수를 선언할 때 앞문자는 대문자로 하자.
+	//3. 클래스를 선언할 때 앞문자는 대문자로 하자.
+	//4. 프로퍼티를 선언할 때 앞문자는 대문자로 하자.
+	//[출처] 유니티 Transform과 transform의 차이점|작성자 니치
+
+
+
 	int totalScore = 0;
 
 	//싱글톤이라는 디자인패턴. 하나밖에 존재할수밖에 없다. 어디서든 불러 쓸수 있다. 
@@ -102,6 +112,9 @@ public class GameManager : MonoBehaviour
 			bg1.SetActive(true);
 			bg2.SetActive(false);
 			bg3.SetActive(false);
+
+			
+
 		}
 		if (GameObject.Find("Ball").GetComponent<Ball>().Coin > 1 && GameObject.Find("Ball").GetComponent<Ball>().Coin < 3)
 		{
@@ -110,6 +123,9 @@ public class GameManager : MonoBehaviour
 			bg3.SetActive(false);
 			bg1.SetActive(false);
 
+
+	
+
 		}
 		if (GameObject.Find("Ball").GetComponent<Ball>().Coin > 3)
 		{
@@ -117,6 +133,7 @@ public class GameManager : MonoBehaviour
 			bg3.SetActive(true);
 			bg2.SetActive(false);
 			bg1.SetActive(false);
+
 		}
 
 
